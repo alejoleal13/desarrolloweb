@@ -7,17 +7,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule,MatFormFieldModule,MatInputModule, MatSelectModule} from '@angular/material';
-import { EdicionComponent } from './edicion/edicion.component'
+import { EdicionComponent } from './edicion/edicion.component';
+import { DetalleTweetComponent } from './detalle-tweet/detalle-tweet.component'
+import {MatCardModule} from '@angular/material/card';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EdicionComponent
+    EdicionComponent,
+    DetalleTweetComponent
   ],
   imports: [
     BrowserModule,
+    MatCardModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
