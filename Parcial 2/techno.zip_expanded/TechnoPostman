@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "1fc3208f-74cc-472b-a86d-e47ed1de779f",
+		"name": "Techno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-ByUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getByUser?Usuario=Q",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getByUser"
+					],
+					"query": [
+						{
+							"key": "Usuario",
+							"value": "Q"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-Createuser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Nombre\":\"Q\",\t\n\t\"Apellido\":\"QF\",\n\t\"usuario\":\"Q\",\n\t\"Contrasena\":\"QF\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-AllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getAllUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-CreateArtista",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\":\"Diego\",\n\t\"descripcion\":\"jsapoddsaojdasojpdsapodaopsadjdsapdsapojdsapojdsasadsasadpoadsposapoadsapodsapojsadsapojsapojdsapojdsa\",\n\t\"categoria\":\"Rock\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/createArtista",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"createArtista"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-AllArtistas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getAllArtistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getAllArtistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-ByArtista",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getByArtista?Artista=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getByArtista"
+					],
+					"query": [
+						{
+							"key": "Artista",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-CreatePublicacion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idArtista\":2,\n\t\"publicacion\":\"Que mal artista!!!!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/createPublicacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"createPublicacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-AllPublicaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getAllPublicaciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getAllPublicaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-PublicacionByArtista",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getPublicacionByArtista/?IdArtista=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getPublicacionByArtista",
+						""
+					],
+					"query": [
+						{
+							"key": "IdArtista",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

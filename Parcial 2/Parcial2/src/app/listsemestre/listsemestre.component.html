@@ -1,0 +1,57 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-profile">
+                    <div class="card-avatar">
+                        <a href="#pablo">
+                            <img class="img" src="./assets/img/faces/tim.png" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-category text-gray">Ingenieria de sistemas</h6>
+                        <h4 class="card-title">Alec Thompson</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Información de Semestre</h4>
+                        </div>
+                    <div class="card-body">
+                        
+                            <div class="row">
+
+                              <table class="table table-hover">
+                                <tr class="text-center ">
+                                  <th>Codigo</th>
+                                  <th>Semestre</th>
+                                </tr>                                
+                              
+                              <tbody>
+                                  <tr *ngFor="let semestre of semestre" class="text-center ">
+                                   
+                                    <td>{{semestre.IdTweet}}</td>
+                                    <td>{{semestre.Tweet}}</td>
+                                   
+                                    <td>
+                                        <button (click)="Eliminar(semestre)" class="btn btn-danger">Eliminar</button>                             
+                                        </td>
+                                    </tr>                                
+                                    
+                              </tbody>
+                            </table>
+
+                            </div>
+                                                       
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+  

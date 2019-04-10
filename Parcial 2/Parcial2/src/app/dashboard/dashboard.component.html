@@ -1,0 +1,43 @@
+
+<div class="col-md-15">
+    <div class="card">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title">Tweets Usuarios</h4>
+            </div>
+        <div class="card-body">
+            
+          <div class="row">
+
+            <table class="table table-hover">
+              <tr class="text-center ">
+                <th>Usuario</th>
+                <th>Tweet</th>
+                <th>Usuario</th>
+                <th>Tweet</th>
+              </tr>                                
+            
+            <tbody>
+                <tr *ngFor="let artista of artista" class="text-center ">
+                 
+                  <td>{{artista.idArtista}}</td>
+                  <td>{{artista.nombre}}</td>
+                  <td>{{artista.descripcion}}</td>
+                  <td>{{artista.Categoria}}</td>
+                 
+                  <td>
+                    <button (click)="Consulta(artista)"  class="btn btn-danger">Consultar</button>                             
+                    </td>
+            
+            
+                  </tr>                                
+                  
+            </tbody>
+          </table>
+
+          </div>
+          
+                                           
+            
+        </div>
+    </div>
+</div>

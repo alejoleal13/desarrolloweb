@@ -1,0 +1,23 @@
+ <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Iniciar Sección</h4>
+                        </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-5">
+                                  <mat-form-field class="example-full-width">
+                                      <input [(ngModel)]="logins.usuario" [ngModelOptions]="{standalone: true}" matInput placeholder="Usuario" type="text" required>
+                                    </mat-form-field>
+                                    <mat-form-field class="example-full-width">
+                                        <input [(ngModel)]="logins.Contrasena" [ngModelOptions]="{standalone: true}" matInput placeholder="Contrasena" type="text" required>
+                                      </mat-form-field>
+                                </div>
+                            </div>
+                            <button (click)="login()" class="btn btn-danger pull-left">Iniciar Secciòn</button>
+                            <button (click)="list()" class="btn btn-danger pull-rigth">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>

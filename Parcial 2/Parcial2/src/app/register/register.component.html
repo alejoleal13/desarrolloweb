@@ -1,0 +1,13 @@
+<div class="col-md-6 col-md-offset-3">
+  <h2>Register</h2>
+  <form>
+      <div class="row">
+          <input [(ngModel)]="registro.Nombre" [ngModelOptions]="{standalone: true}" matInput placeholder="Ingrese su  Nombre" type="text" class="form-control" required>
+          <input [(ngModel)]="registro.Apellido" [ngModelOptions]="{standalone: true}" matInput placeholder="Ingrese su Apellido" type="text" class="form-control" required>
+          <input [(ngModel)]="registro.usuario" [ngModelOptions]="{standalone: true}" matInput placeholder="Ingrese cuenta" type="text" class="form-control" required>
+          <input [(ngModel)]="registro.Contrasena" [ngModelOptions]="{standalone: true}" matInput placeholder="Ingrese Contrasena" type="password" class="form-control" required>
+       
+      </div>
+      <button (click)="register()" class="btn btn-danger pull-rigth">Crear Cuenta</button>                             
+      </form>
+</div>

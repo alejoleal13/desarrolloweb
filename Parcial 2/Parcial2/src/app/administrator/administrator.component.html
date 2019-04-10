@@ -1,0 +1,50 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-profile">
+                    <div class="card-avatar">
+                        <a href="#pablo">
+                            <img class="img" src="./assets/img/faces/tim.png" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-category text-gray">Ingenieria de sistemas</h6>
+                        <h4 class="card-title">Alec Thompson</h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Crear semestre</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input [(ngModel)]="artista.nombre" [ngModelOptions]="{standalone: true}"
+                                            matInput placeholder="Usuario" type="number" required>
+                                    </mat-form-field>
+                                    <mat-form-field class="example-full-width">
+                                        <input [(ngModel)]="artista.descripcion" [ngModelOptions]="{standalone: true}"
+                                            matInput placeholder="Ingrese Tweet" type="text" required>
+                                    </mat-form-field>
+                                    <mat-form-field class="example-full-width">
+                                        <input [(ngModel)]="artista.categoria" [ngModelOptions]="{standalone: true}"
+                                            matInput placeholder="Ingrese Tweet" type="text" required>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <button (click)="Guardar()" class="btn btn-danger pull-left">Crear Tweet</button>
+                            <button (click)="list()" class="btn btn-danger pull-right">Consultar Tweet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
